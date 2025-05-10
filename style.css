@@ -1,0 +1,92 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(135deg, #74ebd5, #acb6e5);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.auth-container, .todo-container {
+  background: #fff;
+  border-radius: 16px;
+  padding: 25px;
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  text-align: center;
+}
+
+input {
+  padding: 12px;
+  font-size: 16px;
+  border-radius: 10px;
+  border: 1.5px solid #ccc;
+  width: 100%;
+}
+
+button {
+  padding: 12px;
+  font-size: 16px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background-color: #007bff;
+  color: white;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+#clearBtn {
+  background-color: #e74c3c;
+}
+
+#clearBtn:hover {
+  background-color: #c0392b;
+}
+
+#toggleForm span {
+  color: #007bff;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.todo-item {
+  display: flex;
+  align-items: center;
+  background-color: #f1f2f6;
+  padding: 10px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.todo-item input[type="checkbox"] {
+  margin-right: 10px;
+  width: 18px;
+  height: 18px;
+  accent-color: #2ecc71;
+}
+
+.todo-item label {
+  flex: 1;
+  font-size: 16px;
+  word-break: break-word;
+}
+
+.todo-item input:checked + label {
+  text-decoration: line-through;
+  color: #a4b0be;
+}
